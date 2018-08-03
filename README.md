@@ -33,7 +33,9 @@ $ gem install ascii_chart
 ```ruby
 require 'ascii_chart'
 
-puts AsciiChart.plot(50.times.map { '%.2f' % (Random.rand * 10) })
+AsciiChart.plot((0...90).map { |i|
+ Math.cos(i * ((Math::PI * 8) / 90)).round(2) * 10
+})
 ```
 
 Some sample cases are provided, to see them, execute:
