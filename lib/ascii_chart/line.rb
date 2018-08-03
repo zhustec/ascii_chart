@@ -35,8 +35,8 @@ module AsciiChart
       result[rows - highest][offset - 1] = '┼'
 
       (0...@series.length - 1).each do |x|
-        _curr = ((@series[x + 0] * radio).round - intmin).to_i
-        _next = ((@series[x + 1] * radio).round - intmin).to_i
+        _curr = (@series[x + 0] * radio).round - intmin
+        _next = (@series[x + 1] * radio).round - intmin
 
         if _curr == _next
           result[rows - _curr][x + offset] = '-'
