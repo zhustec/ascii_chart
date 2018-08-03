@@ -1,11 +1,12 @@
 # AsciiChart
 
-[![Travis](https://img.shields.io/travis/zhustec/ascii_chart/master.svg?style=flat-square)](https://travis-ci.com/zhustec/ascii_chart)
-[![Coveralls github](https://img.shields.io/coveralls/github/zhustec/ascii_chart/master.svg?style=flat-square)](https://coveralls.io/github/zhustec/ascii_chart)
+[![Travis](https://img.shields.io/travis/zhustec/ascii_chart.svg?style=flat-square)](https://travis-ci.com/zhustec/ascii_chart)
 [![Gem](https://img.shields.io/gem/v/ascii_chart.svg?style=flat-square)](https://rubygems.org/gems/ascii_chart)
+[![Coveralls github](https://img.shields.io/coveralls/github/zhustec/ascii_chart/master.svg?style=flat-square)](https://coveralls.io/github/zhustec/ascii_chart)
+[![Depfu](https://img.shields.io/depfu/zhustec/ascii_chart.svg?style=flat-square)](https://depfu.com/repos/zhustec/ascii_chart)
 [![license](https://img.shields.io/github/license/zhustec/ascii_chart.svg?style=flat-square)](https://github.com/zhustec/ascii_chart/blob/master/LICENSE)
 
-Nice-looking lightweight console ASCII line charts ╭┈╯. Port of kroitor/asciichart.
+Nice-looking lightweight console ASCII line charts ╭┈╯. Port of [kroitor/asciichart](https://github.com/kroitor/asciichart).
 
 ## Installation
 
