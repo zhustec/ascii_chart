@@ -4,7 +4,7 @@ module AsciiChart
       offset: 3,
       format: '%8.2f ',
       height: nil
-    }
+    }.freeze
 
     def initialize(series, options = {})
       @series = series
@@ -12,14 +12,16 @@ module AsciiChart
     end
 
     def plot
-      max, min = @series.max, @series.min
+      max = @series.max
+      min = @series.min
       interval = (max - min).abs
 
       @options[:height] ||= interval
       radio = @options[:height].to_f / interval
       offset = @options[:offset]
 
-      intmax, intmin = (max * radio).ceil, (min * radio).floor
+      intmax = (max * radio).ceil
+      intmin = (min * radio).floor
       rows = (intmax - intmin).abs
       width = @series.length + offset
 
