@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'ascii_chart/version'
 require 'ascii_chart/line'
 
