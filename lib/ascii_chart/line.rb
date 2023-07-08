@@ -20,6 +20,7 @@ module AsciiChart
 
       @options[:height] ||= interval
       radio = @options[:height].to_f / interval
+      radio = 1.0 if radio.nan? || radio == Float::INFINITY
       offset = @options[:offset]
 
       intmax = (max * radio).ceil
@@ -31,6 +32,7 @@ module AsciiChart
 
       (intmin..intmax).each do |y|
         label = @options[:format] % (max - (((y - intmin) * interval).to_f / rows))
+        label = @options[:format] % y if rows == 0
         result[y - intmin][[offset - label.length, 0].max] = label
         result[y - intmin][offset - 1] = y == 0 ? '┼' : '┤'
       end
